@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>健康飲水與省水日記</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="../index.html" class="back-btn">← 返回綠色生活首頁</a>
+    <div class="wrapper">
+        <h2>💧 飲水與省水追蹤器</h2>
+        <div class="progress-section">
+            <p>今日飲水進度：<span id="water-count">0</span> / 2000 ml</p>
+            <div class="bar-bg"><div id="water-bar" class="bar-fill"></div></div>
+        </div>
+        <div class="btn-group">
+            <button class="add-water" onclick="addWater(250)">＋ 喝一杯水 (250ml)</button>
+            <button class="add-water" onclick="addWater(500)">＋ 喝一瓶水 (500ml)</button>
+        </div>
+        <hr>
+        <div class="eco-checkbox">
+            <label><input type="checkbox" onchange="toggleEco(this)"> 今天洗澡縮短到 5 分鐘內</label>
+            <label><input type="checkbox" onchange="toggleEco(this)"> 刷牙時常用漱口杯裝水</label>
+        </div>
+        <p class="eco-score">今日省水成就：<span id="eco-count">0</span> 項已達成</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

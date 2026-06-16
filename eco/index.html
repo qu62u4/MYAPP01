@@ -3,58 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>安全密碼產生器</title>
+    <title>綠色生活風格小幫手</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="../index.html" class="back-home">← 返回首頁</a>
+    <a href="../index.html" class="back-home">← 返回主網站首頁</a>
+
+    <header>
+        <h1>🌱 綠色生活風格小幫手</h1>
+        <p>探索實用的環保互動工具，一起實踐減碳綠生活！</p>
+    </header>
 
     <div class="container">
-        <h2>🔒 安全密碼產生器</h2>
-        <p class="subtitle">客製化你的安全密碼，即時分析密碼強度</p>
-
-        <div class="result-container">
-            <span id="password-display">点击下方按钮生成</span>
-            <button id="copy-btn" onclick="copyPassword()">📋 複製</button>
-        </div>
-
-        <div class="strength-container">
-            <div class="strength-bar-wrapper">
-                <div id="strength-bar" class="strength-bar"></div>
-            </div>
-            <span id="strength-text">強度：等待生成</span>
-        </div>
-
-        <div class="settings">
-            <div class="setting-item">
-                <label for="length">密碼長度: <span id="length-val">12</span></label>
-                <input type="range" id="length" min="6" max="30" value="12" oninput="updateLengthVal()">
-            </div>
-            
-            <div class="setting-item checkbox-item">
-                <input type="checkbox" id="uppercase" checked>
-                <label for="uppercase">包含大寫字母 (A-Z)</label>
-            </div>
-
-            <div class="setting-item checkbox-item">
-                <input type="checkbox" id="lowercase" checked>
-                <label for="lowercase">包含小寫字母 (a-z)</label>
-            </div>
-
-            <div class="setting-item checkbox-item">
-                <input type="checkbox" id="numbers" checked>
-                <label for="numbers">包含數字 (0-9)</label>
-            </div>
-
-            <div class="setting-item checkbox-item">
-                <input type="checkbox" id="symbols">
-                <label for="symbols">包含特殊符號 (!@#$%^&*)</label>
+        <div class="card">
+            <div class="card-content">
+                <div class="icon-box icon-carbon">🚗</div>
+                <h3>日常碳足跡計算機</h3>
+                <p>輸入你的交通與冷氣使用習慣，即時計算出你的每日碳排放量，並給予環保減碳評級。</p>
+                <a href="carbon/index.html" class="btn btn-carbon">開啟應用 ➔</a>
             </div>
         </div>
 
-        <button class="generate-btn" onclick="generatePassword()">⚡ 產生安全密碼</button>
+        <div class="card">
+            <div class="card-content">
+                <div class="icon-box icon-water">💧</div>
+                <h3>健康飲水與省水日記</h3>
+                <p>追蹤每日喝水量與記錄省水好習慣，透過動態進度條幫你達成健康與環保的雙重目標。</p>
+                <a href="water/index.html" class="btn btn-water">開始記錄 ➔</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="icon-box icon-sorting">♻️</div>
+                <h3>環保資源回收分類挑戰</h3>
+                <p>考驗你的環保常識！在限定時間內挑戰將各種垃圾正確分類，好玩又有教育意義。</p>
+                <a href="sorting/index.html" class="btn btn-sorting">開始挑戰 ➔</a>
+            </div>
+        </div>
     </div>
 
-    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2026 綠色生活風格網頁作業專案</p>
+    </footer>
 </body>
 </html>

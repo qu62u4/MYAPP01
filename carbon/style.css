@@ -1,0 +1,13 @@
+body { background: #fff7ed; display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 100vh; font-family: sans-serif; margin: 0; }
+.back-btn { margin-bottom: 1.5rem; text-decoration: none; color: #ea580c; font-weight: bold; }
+.wrapper { background: white; padding: 2.5rem; border-radius: 16px; box-shadow: 0 10px 15px rgba(0,0,0,0.05); width: 90%; max-width: 420px; text-align: center; border: 1px solid #ffedd5; }
+h2 { color: #ea580c; margin-bottom: 2rem; }
+.form-group { text-align: left; margin-bottom: 1.5rem; }
+label { display: block; margin-bottom: 0.5rem; font-weight: bold; color: #4b5563; }
+input { width: 100%; padding: 0.75rem; border: 2px solid #e5e7eb; border-radius: 8px; font-size: 1rem; outline: none; box-sizing: border-box; }
+input:focus { border-color: #ea580c; }
+button { width: 100%; padding: 0.8rem; background: #ea580c; color: white; border: none; border-radius: 8px; font-size: 1rem; font-weight: bold; cursor: pointer; }
+button:hover { background: #c2410c; }
+.result-box { margin-top: 2rem; padding: 1.5rem; background: #fff7ed; border-radius: 12px; display: none; }
+.num { font-size: 3rem; font-weight: bold; color: #ea580c; }
+.status { font-weight: bold; margin-top: 0.5rem; font-size: 1.1rem; }

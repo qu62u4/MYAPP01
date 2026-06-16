@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>資源回收分類挑戰</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="../index.html" class="back-btn">← 返回綠色生活首頁</a>
+    <div class="wrapper">
+        <h2>♻️ 資源回收分類挑戰</h2>
+        <div class="game-box">
+            <p>請將以下物品放入正確分類：</p>
+            <div class="item-display" id="item-box">寶特瓶</div>
+            
+            <div class="btn-grid">
+                <button onclick="checkAnswer('plastic')">塑料類</button>
+                <button onclick="checkAnswer('paper')">紙類</button>
+                <button onclick="checkAnswer('trash')">一般垃圾</button>
+            </div>
+        </div>
+        <p class="score">得分：<span id="score-val">0</span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

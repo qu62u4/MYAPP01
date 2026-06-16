@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>安全密碼產生器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="../index.html" class="back-home">← 返回首頁</a>
+
+    <div class="container">
+        <h2>🔒 安全密碼產生器</h2>
+        <p class="subtitle">客製化你的安全密碼，即時分析密碼強度</p>
+
+        <div class="result-container">
+            <span id="password-display">点击下方按钮生成</span>
+            <button id="copy-btn" onclick="copyPassword()">📋 複製</button>
+        </div>
+
+        <div class="strength-container">
+            <div class="strength-bar-wrapper">
+                <div id="strength-bar" class="strength-bar"></div>
+            </div>
+            <span id="strength-text">強度：等待生成</span>
+        </div>
+
+        <div class="settings">
+            <div class="setting-item">
+                <label for="length">密碼長度: <span id="length-val">12</span></label>
+                <input type="range" id="length" min="6" max="30" value="12" oninput="updateLengthVal()">
+            </div>
+            
+            <div class="setting-item checkbox-item">
+                <input type="checkbox" id="uppercase" checked>
+                <label for="uppercase">包含大寫字母 (A-Z)</label>
+            </div>
+
+            <div class="setting-item checkbox-item">
+                <input type="checkbox" id="lowercase" checked>
+                <label for="lowercase">包含小寫字母 (a-z)</label>
+            </div>
+
+            <div class="setting-item checkbox-item">
+                <input type="checkbox" id="numbers" checked>
+                <label for="numbers">包含數字 (0-9)</label>
+            </div>
+
+            <div class="setting-item checkbox-item">
+                <input type="checkbox" id="symbols">
+                <label for="symbols">包含特殊符號 (!@#$%^&*)</label>
+            </div>
+        </div>
+
+        <button class="generate-btn" onclick="generatePassword()">⚡ 產生安全密碼</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
